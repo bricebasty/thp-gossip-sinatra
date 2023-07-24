@@ -34,9 +34,9 @@ Gossip Generator
 
 :heavy_check_mark: Create a gossip and store it in a CSV file\
 :heavy_check_mark: Display gossips from the CSV file\
-:heavy_check_mark: Delete a specific gossip from the CSV file
+:heavy_check_mark: Delete a specific gossip from the CSV file\
 :heavy_check_mark: Display comments from another CSV file\
-:heavy_check_mark: Add comments\
+:heavy_check_mark: Add comments
 
 ## :rocket: Technologies
 
