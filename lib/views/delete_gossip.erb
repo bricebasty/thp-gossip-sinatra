@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </head>
+  <body class="text-center">
+    <h1 class="my-3">Supprime un potin !</h1>
+    <p>Quel gossip veux-tu supprimer ?</p>
+    <% gossips.each.with_index do |gossip, index| %>
+      <div class="text-center m-3">
+        <form action="/gossips/delete" method="POST">
+          <button class="btn btn-warning">
+          Gossip numéro <%= index + 1 %>
+          </button>
+        </form>
+      </div>
+    <% end %>
+    <a class="btn btn-primary" href="../../">Lien pour revenir à la page des potins</a>
+  </body>
+</html>
